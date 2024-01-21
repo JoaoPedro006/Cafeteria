@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: aliceblue;
+}
+
+.fixed{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+}
+
+
+.sessao-header{
+    width: 100%;
+    height: 90px;
+}
+
+.sessao-header header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 24, 24);
+}
+
+.botao-menu{
+    display: none;
+}
+
+.logo, .menu, .cadastro{
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logo i{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.logo i img{
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.logo h2{
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Playfair Display';
+    display: none;
+}
+
+.menu{
+    width: 36.3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    min-width: 500px;
+}
+
+.menu nav{
+    width: 100%;
+    height: 100%;
+}
+
+.menu nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu nav ul li{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24%;
+    height: 100%;
+}
+
+.menu nav ul li:hover{
+    background-color: rgba(250, 243, 243, 0.363);
+    cursor: pointer;
+}
+
+.menu nav ul li a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Menu mobile */
+
+.menu-mobile{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.menu-mobile nav ul{
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0f0f0f;
+
+}
+
+.menu-mobile nav ul li{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #ffffff;
+    cursor: pointer;
+    list-style-type: none;
+    color: #ffffff;
+}
+
+.menu-mobile nav li:hover{
+    background-color: rgb(216, 112, 27);
+}
+
+.cadastro .buttons{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.cadastro a{
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cadastro a:hover{
+    border-bottom: 2px solid white;
+}
+
+/* Sessao-1 */
+
+.section-1{
+    width: 100%;
+    height: 630px;
+    background-image: url('../img/coffee-2.jpg');
+    background-size: cover;
+    background-position: 70%;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background .texto-home{
+    width: 70%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    min-width: 450px;
+}
+
+.background .texto-home h1{
+    font-size: 39px;
+    color: #1c1b1b;
+    margin-bottom: 30px;
+    z-index: 3;
+
+}
+
+.texto-home h4{
+    font-size: 25px;
+    color: #131313;
+}
+
+@media screen and (max-width:934px){
+    .menu{
+        display: none;
+    }
+
+    .cadastro{
+        display: none;
+    }
+
+    .logo{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo i{
+        display: none;
+    }
+
+    .logo h2{
+        font-size: 34px;
+        padding-right: 90px;
+        display: block;
+    }
+
+    .texto-home h1{
+        font-size: 31px;
+        color: #1c1b1b;
+        margin-bottom: 30px;
+    }
+
+    
+    .texto-home h4{
+        font-size: 19px;
+        color: #131313;
+    }
+
+    .botao-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 20px;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #ffffff;
+    }
+
+    .botao-menu img{
+        width: 70%;
+        height: 70%;
+
+    }
+
+}
